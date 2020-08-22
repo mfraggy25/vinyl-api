@@ -1,0 +1,127 @@
+{"_id":{"$oid":"5f3c992a2e8816c77fd833b2"},"Title":"All Eyez On Me","Year":"1996","Genre":"Rap","Artist":"2Pac","ImagePath":"alleyezonme.png"}
+{"_id":{"$oid":"5f3c99b42e8816c77fd833b3"},"Title":"The Sign","Year":"1993","Genre":"Pop","Artist":"Ace Of Base","ImagePath":"thesign.png"}
+{"_id":{"$oid":"5f3c9a7b2e8816c77fd833b4"},"Title":"Dirt","Year":"1992","Genre":"Grunge","Artist":"Alice In Chains","ImagePath":"dirt.png"}
+{"_id":{"$oid":"5f3c9ad62e8816c77fd833b5"},"Title":"Goddess","Year":"2014","Genre":"Alternative R&B","Artist":"Banks","ImagePath":"goddess.png"}
+{"_id":{"$oid":"5f3c9b8b2e8816c77fd833b6"},"Title":"El Camino","Year":"2011","Genre":"Blues Rock","Artist":"The Black Keys","ImagePath":"elcamino.png"}
+{"_id":{"$oid":"5f3c9bc62e8816c77fd833b7"},"Title":"II","Year":"1994","Genre":"R&B","Artist":"Boyz II Men","ImagePath":"ii.png"}
+{"_id":{"$oid":"5f3c9c2b2e8816c77fd833b8"},"Title":"Hounds Of Love","Year":"1985","Genre":"Art Pop","Artist":"Kate Bush","ImagePath":"houndsoflove.png"}
+{"_id":{"$oid":"5f3c9c6c2e8816c77fd833b9"},"Title":"Butterfly","Year":"1997","Genre":"R&B","Artist":"Mariah Carey","ImagePath":"butterfly.png"}
+{"_id":{"$oid":"5f3c9cb32e8816c77fd833ba"},"Title":"Chris","Year":"2018","Genre":"Pop","Artist":"Christine & The Queens","ImagePath":"chris.png"}
+{"_id":{"$oid":"5f3c9cf62e8816c77fd833bb"},"Title":"Breakaway","Year":"2004","Genre":"Pop Rock","Artist":"Kelly Clarkson","ImagePath":"breakaway.png"}
+{"_id":{"$oid":"5f3c9d332e8816c77fd833bc"},"Title":"London Calling","Year":"1979","Genre":"Punk Rock","Artist":"The Clash","ImagePath":"londoncalling.png"}
+{"_id":{"$oid":"5f3c9d892e8816c77fd833bd"},"Title":"Disintegration","Year":"1989","Genre":"Alternative Rock","Artist":"The Cure","ImagePath":"disintegration.png"}
+{"_id":{"$oid":"5f3c9dfe2e8816c77fd833be"},"Title":"Playing The Angel","Year":"2005","Genre":"Synth-Pop","Artist":"Depeche Mode","ImagePath":"playingtheangel.png"}
+{"_id":{"$oid":"5f3c9e452e8816c77fd833bf"},"Title":"The Chronic","Year":"1992","Genre":"Rap","Artist":"Dr. Dre","ImagePath":"thechronic.png"}
+{"_id":{"$oid":"5f3c9e6f2e8816c77fd833c0"},"Title":"2001","Year":"1999","Genre":"Rap","Artist":"Dr. Dre","ImagePath":"2001.png"}
+{"_id":{"$oid":"5f3c9ea62e8816c77fd833c1"},"Title":"Take Care","Year":"2011","Genre":"Rap","Artist":"Drake","ImagePath":"takecare.png"}
+{"_id":{"$oid":"5f3c9ee32e8816c77fd833c2"},"Title":"Rockferry","Year":"2008","Genre":"Soul","Artist":"Duffy","ImagePath":"rockferry.png"}
+{"_id":{"$oid":"5f3ca0192e8816c77fd833c3"},"Title":"Dogrel","Year":"2019","Genre":"Post-Punk","Artist":"Fontaines D.C.","ImagePath":"dogrel.png"}
+{"_id":{"$oid":"5f3ca05d2e8816c77fd833c4"},"Title":"Singles","Year":"2014","Genre":"Synth-Pop","Artist":"Future Islands","ImagePath":"singles.png"}
+{"_id":{"$oid":"5f3ca0992e8816c77fd833c5"},"Title":"Ginuwine...The Bachelor","Year":"1996","Genre":"R&B","Artist":"Ginuwine","ImagePath":"ginuwinethebachelor.png"}
+{"_id":{"$oid":"5f3ca0df2e8816c77fd833c6"},"Title":"Let England Shake","Year":"2011","Genre":"Folk Rock","Artist":"PJ Harvey","ImagePath":"letenglandshake.png"}
+{"_id":{"$oid":"5f3ca1282e8816c77fd833c7"},"Title":"Live Through This","Year":"1994","Genre":"Grunge","Artist":"Hole","ImagePath":"livethroughthis.png"}
+{"_id":{"$oid":"5f3ca1602e8816c77fd833c8"},"Title":"New Day Rising","Year":"1985","Genre":"Alternative Rock","Artist":"Husker Du","ImagePath":"newdayrising.png"}
+{"_id":{"$oid":"5f3ca1932e8816c77fd833c9"},"Title":"Control","Year":"1986","Genre":"R&B","Artist":"Janet Jackson","ImagePath":"control.png"}
+{"_id":{"$oid":"5f3ca1be2e8816c77fd833ca"},"Title":"The Velvet Rope","Year":"1997","Genre":"R&B","Artist":"Janet Jackson","ImagePath":"thevelvetrope.png"}
+{"_id":{"$oid":"5f3ca1ee2e8816c77fd833cb"},"Title":"Thriller","Year":"1982","Genre":"Pop","Artist":"Michael Jackson","ImagePath":"thriller.png"}
+{"_id":{"$oid":"5f3ca2392e8816c77fd833cc"},"Title":"In Colour","Year":"2015","Genre":"Electronic","Artist":"Jamie xx","ImagePath":"incolour.png"}
+{"_id":{"$oid":"5f3ca29a2e8816c77fd833cd"},"Title":"Post-Nothing","Year":"2009","Genre":"Garage Rock","Artist":"Japandroids","ImagePath":"postnothing.png"}
+{"_id":{"$oid":"5f3ca2cb2e8816c77fd833ce"},"Title":"Celebration Rock","Year":"2012","Genre":"Garage Rock","Artist":"Japandroids","ImagePath":"celebrationrock.png"}
+{"_id":{"$oid":"5f3ca3042e8816c77fd833cf"},"Title":"The Black Album","Year":"2003","Genre":"Rap","Artist":"Jay-Z","ImagePath":"theblackalbum.png"}
+{"_id":{"$oid":"5f3ca3592e8816c77fd833d0"},"Title":"Closer","Year":"1980","Genre":"Post-Punk","Artist":"Joy Division","ImagePath":"closer.png"}
+{"_id":{"$oid":"5f3ca3a62e8816c77fd833d1"},"Title":"Hot Fuss","Year":"2004","Genre":"Rock","Artist":"The Killers","ImagePath":"hotfuss.png"}
+{"_id":{"$oid":"5f3ca4082e8816c77fd833d2"},"Title":"good kid, M.a.a.D. city","Year":"2012","Genre":"Rap","Artist":"Kendrick Lamar","ImagePath":"goodkidmaadcity.png"}
+{"_id":{"$oid":"5f3ca4532e8816c77fd833d3"},"Title":"Take Me Apart","Year":"2017","Genre":"Alternative R&B","Artist":"Kelela","ImagePath":"takemeapart.png"}
+{"_id":{"$oid":"5f3ca48e2e8816c77fd833d4"},"Title":"Hybrid Theory","Year":"2000","Genre":"Nu Metal","Artist":"Linkin Park","ImagePath":"hybridtheory.png"}
+{"_id":{"$oid":"5f3ca4dd2e8816c77fd833d5"},"Title":"Like A Prayer","Year":"1989","Genre":"Pop","Artist":"Madonna","ImagePath":"likeaprayer.png"}
+{"_id":{"$oid":"5f3ca5042e8816c77fd833d6"},"Title":"Ray Of Light","Year":"1998","Genre":"Pop","Artist":"Madonna","ImagePath":"rayoflight.png"}
+{"_id":{"$oid":"5f3ca5512e8816c77fd833d7"},"Title":"Fumbling Towards Ecstasy","Year":"1993","Genre":"Soft Rock","Artist":"Sarah McLachlan","ImagePath":"fumblingtowardsecstasy.png"}
+{"_id":{"$oid":"5f3ca5992e8816c77fd833d8"},"Title":"Puberty 2","Year":"2016","Genre":"Indie Rock","Artist":"Mitski","ImagePath":"puberty2.png"}
+{"_id":{"$oid":"5f3ca5e22e8816c77fd833d9"},"Title":"Jagged Little Pill","Year":"1995","Genre":"Pop Rock","Artist":"Alanis Morissette","ImagePath":"jaggedlittlepill.png"}
+{"_id":{"$oid":"5f3ca6272e8816c77fd833da"},"Title":"Origin Of Symmetry","Year":"2001","Genre":"Alternative Rock","Artist":"Muse","ImagePath":"originofsymmetry"}
+{"_id":{"$oid":"5f3ca6782e8816c77fd833db"},"Title":"Isn't Anything","Year":"1988","Genre":"Shoegaze","Artist":"My Bloody Valentine","ImagePath":"isntanything.png"}
+{"_id":{"$oid":"5f3dc8592e8816c77fd833dc"},"Title":"Illmatic","Year":"1994","Genre":"Rap","Artist":"Nas","ImagePath":"illmatic.png"}
+{"_id":{"$oid":"5f3dca642e8816c77fd833de"},"Title":"Alligator","Year":"2005","Genre":"Indie Rock","Artist":"The National","ImagePath":"alligator.png"}
+{"_id":{"$oid":"5f3dca8f2e8816c77fd833df"},"Title":"Boxer","Year":"2007","Genre":"Indie Rock","Artist":"The National","ImagePath":"boxer.png"}
+{"_id":{"$oid":"5f3dcad12e8816c77fd833e0"},"Title":"High Violet","Year":"2010","Genre":"Indie Rock","Artist":"The National","ImagePath":"highviolet.png"}
+{"_id":{"$oid":"5f3dcb012e8816c77fd833e1"},"Title":"Trouble Will Find Me","Year":"2013","Genre":"Indie Rock","Artist":"The National","ImagePath":"troublewillfindme.png"}
+{"_id":{"$oid":"5f3dcb3a2e8816c77fd833e2"},"Title":"Sleep Well Beast","Year":"2017","Genre":"Indie Rock","Artist":"The National","ImagePath":"sleepwellbeast.png"}
+{"_id":{"$oid":"5f3dcb8d2e8816c77fd833e3"},"Title":"Cherry Tree Vol. 1","Year":"2018","Genre":"Indie Rock","Artist":"The National","ImagePath":"cherrytreevol1.png"}
+{"_id":{"$oid":"5f3dcbd62e8816c77fd833e4"},"Title":"I Am Easy To Find","Year":"2019","Genre":"Indie Rock","Artist":"The National","ImagePath":"iameasytofind.png"}
+{"_id":{"$oid":"5f3dcc202e8816c77fd833e5"},"Title":"Cherry Tree Vol. 2","Year":"2019","Genre":"Indie Rock","Artist":"The National","ImagePath":"cherrytreevol2.png"}
+{"_id":{"$oid":"5f3dcc4c2e8816c77fd833e6"},"Title":"Nevermind","Year":"1991","Genre":"Grunge","Artist":"Nirvana","ImagePath":"nevermind.png"}
+{"_id":{"$oid":"5f3dcc9d2e8816c77fd833e7"},"Title":"Definitely Maybe","Year":"1994","Genre":"Britpop","Artist":"Oasis","ImagePath":"definitelymaybe.png"}
+{"_id":{"$oid":"5f3dccf02e8816c77fd833e8"},"Title":"(What's The Story?) Morning Glory?","Year":"1995","Genre":"Britpop","Artist":"Oasis","ImagePath":"whatsthestorymorningglory.png"}
+{"_id":{"$oid":"5f3dcd2e2e8816c77fd833e9"},"Title":"Ixnay On The Hombre","Year":"1997","Genre":"Punk Rock","Artist":"The Offspring","ImagePath":"ixnayonthehombre.png"}
+{"_id":{"$oid":"5f3dcd782e8816c77fd833ea"},"Title":"Slanted And Enchanted","Year":"1992","Genre":"Indie Rock","Artist":"Pavement","ImagePath":"slantedandenchanted.png"}
+{"_id":{"$oid":"5f3dcdb42e8816c77fd833eb"},"Title":"Crooked Rain, Crooked Rain","Year":"1994","Genre":"Indie Rock","Artist":"Pavement","ImagePath":"crookedraincrookedrain.png"}
+{"_id":{"$oid":"5f3dcde22e8816c77fd833ec"},"Title":"Brighten The Corners","Year":"1997","Genre":"Indie Rock","Artist":"Pavement","ImagePath":"brightenthecorners.png"}
+{"_id":{"$oid":"5f3dce422e8816c77fd833ed"},"Title":"Ten","Year":"1991","Genre":"Grunge","Artist":"Pearl Jam","ImagePath":"ten.png"}
+{"_id":{"$oid":"5f3dce6c2e8816c77fd833ee"},"Title":"Vs.","Year":"1993","Genre":"Grunge","Artist":"Pearl Jam","ImagePath":"vs.png"}
+{"_id":{"$oid":"5f3dceab2e8816c77fd833ef"},"Title":"Yield","Year":"1998","Genre":"Rock","Artist":"Pearl Jam","ImagePath":"yield.png"}
+{"_id":{"$oid":"5f3dcefb2e8816c77fd833f0"},"Title":"Exile In Guyville","Year":"1993","Genre":"Indie Rock","Artist":"Liz Phair","ImagePath":"exileinguyville.png"}
+{"_id":{"$oid":"5f3dd0032e8816c77fd833f1"},"Title":"Cardinal","Year":"2016","Genre":"Indie Rock","Artist":"Pinegrove","ImagePath":"cardinal.png"}
+{"_id":{"$oid":"5f3dd03b2e8816c77fd833f2"},"Title":"Doolittle","Year":"1989","Genre":"Alternative Rock","Artist":"Pixies","ImagePath":"doolittle.png"}
+{"_id":{"$oid":"5f3dd0e72e8816c77fd833f3"},"Title":"Murmur","Year":"1983","Genre":"Alternative Rock","Artist":"R.E.M.","ImagePath":"murmur.png"}
+{"_id":{"$oid":"5f3dd1252e8816c77fd833f4"},"Title":"Life's Rich Pageant","Year":"1986","Genre":"Alternative Rock","Artist":"R.E.M.","ImagePath":"lifesrichpageant.png"}
+{"_id":{"$oid":"5f3dd17d2e8816c77fd833f5"},"Title":"The Bends","Year":"1995","Genre":"Alternative Rock","Artist":"Radiohead","ImagePath":"thebends.png"}
+{"_id":{"$oid":"5f3dd1b22e8816c77fd833f6"},"Title":"OK Computer","Year":"1997","Genre":"Alternative Rock","Artist":"Radiohead","ImagePath":"okcomputer.png"}
+{"_id":{"$oid":"5f3dd1e12e8816c77fd833f7"},"Title":"In Rainbows","Year":"2007","Genre":"Alternative Rock","Artist":"Radiohead","ImagePath":"inrainbows.png"}
+{"_id":{"$oid":"5f3dd22c2e8816c77fd833f8"},"Title":"Californication","Year":"1999","Genre":"Rock","Artist":"Red Hot Chili Peppers","ImagePath":"californication.png"}
+{"_id":{"$oid":"5f3dd2602e8816c77fd833f9"},"Title":"By The Way","Year":"2002","Genre":"Rock","Artist":"Red Hot Chili Peppers","ImagePath":"bytheway.png"}
+{"_id":{"$oid":"5f3dd2e02e8816c77fd833fa"},"Title":"Never Mind The Bollocks","Year":"1977","Genre":"Punk Rock","Artist":"Sex Pistols","ImagePath":"nevermindthebollocks.png"}
+{"_id":{"$oid":"5f3dd3172e8816c77fd833fb"},"Title":"Swoon","Year":"2009","Genre":"Alternative Rock","Artist":"Silversun Pickups","ImagePath":"swoon.png"}
+{"_id":{"$oid":"5f3dd37b2e8816c77fd833fc"},"Title":"Dig Me Out","Year":"1997","Genre":"Punk Rock","Artist":"Sleater-Kinney","ImagePath":"digmeout.png"}
+{"_id":{"$oid":"5f3dd3b12e8816c77fd833fd"},"Title":"All Hands On The Bad One","Year":"2000","Genre":"Punk Rock","Artist":"Sleater-Kinney","ImagePath":"allhandsonthebadone.png"}
+{"_id":{"$oid":"5f3dd3f72e8816c77fd833fe"},"Title":"Siamese Dream","Year":"1993","Genre":"Alternative Rock","Artist":"Smashing Pumpkins","ImagePath":"siamesedream.png"}
+{"_id":{"$oid":"5f3dd4452e8816c77fd833ff"},"Title":"Horses","Year":"1975","Genre":"Punk Rock","Artist":"Patti Smith","ImagePath":"horses.png"}
+{"_id":{"$oid":"5f3dd47a2e8816c77fd83400"},"Title":"The Queen Is Dead","Year":"1986","Genre":"Alternative Rock","Artist":"The Smiths","ImagePath":"thequeenisdead.png"}
+{"_id":{"$oid":"5f3dd4c22e8816c77fd83401"},"Title":"Doggystyle","Year":"1993","Genre":"Rap","Artist":"Snoop Doggy Dogg","ImagePath":"doggystyle.png"}
+{"_id":{"$oid":"5f3dd4f52e8816c77fd83402"},"Title":"Purple","Year":"1994","Genre":"Grunge","Artist":"Stone Temple Pilots","ImagePath":"purple.png"}
+{"_id":{"$oid":"5f3dd5542e8816c77fd83403"},"Title":"Is This It?","Year":"2001","Genre":"Indie Rock","Artist":"The Strokes","ImagePath":"isthisit.png"}
+{"_id":{"$oid":"5f3dd58a2e8816c77fd83404"},"Title":"CTRL","Year":"2017","Genre":"R&B","Artist":"SZA","ImagePath":"ctrl.png"}
+{"_id":{"$oid":"5f3dd5d12e8816c77fd83405"},"Title":"Lost In The Dream","Year":"2014","Genre":"Indie Rock","Artist":"The War On Drugs","ImagePath":"lostinthedream.png"}
+{"_id":{"$oid":"5f3dd6082e8816c77fd83406"},"Title":"Devotion","Year":"2012","Genre":"Soul","Artist":"Jessie Ware","ImagePath":"devotion.png"}
+{"_id":{"$oid":"5f3dd6352e8816c77fd83407"},"Title":"Out In The Storm","Year":"2017","Genre":"Indie Rock","Artist":"Waxahatchee","ImagePath":"outinthestorm.png"}
+{"_id":{"$oid":"5f3dd6872e8816c77fd83408"},"Title":"My Beautiful, Dark, Twisted Fantasy","Year":"2010","Genre":"Rap","Artist":"Kanye West","ImagePath":"mybeautifuldarktwistedfantasy.png"}
+{"_id":{"$oid":"5f3dd7542e8816c77fd83409"},"Title":"Back To Black","Year":"2006","Genre":"Soul","Artist":"Amy Winehouse","ImagePath":"backtoblack.png"}
+{"_id":{"$oid":"5f3dd7b92e8816c77fd8340a"},"Title":"Cocoa Sugar","Year":"2018","Genre":"Alternative Hip Hop","Artist":"Young Fathers","ImagePath":"cocoasugar.png"}
+{"_id":{"$oid":"5f3f36612e8816c77fd8340b"},"Title":"Malibu","Year":"2016","Genre":"R&B","Artist":"Anderson.paak","ImagePath":"malibu.png"}
+{"_id":{"$oid":"5f3f36a12e8816c77fd8340c"},"Title":"Ventura","Year":"2019","Genre":"R&B","Artist":"Anderson.paak","ImagePath":"ventura.png"}
+{"_id":{"$oid":"5f3f36ec2e8816c77fd8340d"},"Title":"21","Year":"2011","Genre":"Pop","Artist":"Adele","ImagePath":"21.png"}
+{"_id":{"$oid":"5f3f371f2e8816c77fd8340e"},"Title":"Under My Skin","Year":"2004","Genre":"Rock","Artist":"Avril Lavigne","ImagePath":"undermyskin.png"}
+{"_id":{"$oid":"5f3f374b2e8816c77fd8340f"},"Title":"Blackout","Year":"2007","Genre":"Pop","Artist":"Britney Spears","ImagePath":"blackout.png"}
+{"_id":{"$oid":"5f3f37802e8816c77fd83410"},"Title":"Stripped","Year":"2002","Genre":"Pop","Artist":"Christina Aguilera","ImagePath":"stripped.png"}
+{"_id":{"$oid":"5f3f38ac2e8816c77fd83411"},"Title":"Norman Fucking Rockwell!","Year":"2019","Genre":"Soft Rock","Artist":"Lana Del Rey","ImagePath":"normalfuckingrockwell.png"}
+{"_id":{"$oid":"5f3f38ec2e8816c77fd83412"},"Title":"Where You Been","Year":"1993","Genre":"Alternative Rock","Artist":"Dinosaur Jr.","ImagePath":"whereyoubeen.png"}
+{"_id":{"$oid":"5f3f39352e8816c77fd83413"},"Title":"How Big, How Blue, How Beautiful","Year":"2015","Genre":"Alternative Rock","Artist":"Florence + The Machine","ImagePath":"howbighowbluehowbeautiful.png"}
+{"_id":{"$oid":"5f3f39762e8816c77fd83414"},"Title":"thank u, next","Year":"2019","Genre":"R&B","Artist":"Ariana Grande","ImagePath":"thankunext.png"}
+{"_id":{"$oid":"5f3f39f92e8816c77fd83416"},"Title":"Days Are Gone","Year":"2013","Genre":"Indie Pop","Artist":"HAIM","ImagePath":"daysaregone.png"}
+{"_id":{"$oid":"5f3f3a742e8816c77fd83417"},"Title":"Turn On The Bright Lights","Year":"2002","Genre":"Indie Rock","Artist":"Interpol","ImagePath":"turnonthebrightlights.png"}
+{"_id":{"$oid":"5f3f3ab42e8816c77fd83418"},"Title":"Celebrity Skin","Year":"1998","Genre":"Alternative Rock","Artist":"Hole","ImagePath":"celebrityskin.png"}
+{"_id":{"$oid":"5f3f3af02e8816c77fd83419"},"Title":"Melodrama","Year":"2017","Genre":"Pop","Artist":"Lorde","ImagePath":"melodrama.png"}
+{"_id":{"$oid":"5f3f3b372e8816c77fd8341a"},"Title":"I Never Learn","Year":"2014","Genre":"Indie Pop","Artist":"Lykke Li","ImagePath":"ineverlearn.png"}
+{"_id":{"$oid":"5f3f3b892e8816c77fd8341b"},"Title":"Arular","Year":"2005","Genre":"Alternative Hip Hop","Artist":"M.I.A.","ImagePath":"arular.png"}
+{"_id":{"$oid":"5f3f3bb82e8816c77fd8341c"},"Title":"Kala","Year":"2007","Genre":"Alternative Hip Hop","Artist":"M.I.A.","ImagePath":"kala.png"}
+{"_id":{"$oid":"5f3f3c022e8816c77fd8341d"},"Title":"Stankonia","Year":"2000","Genre":"Rap","Artist":"Outkast","ImagePath":"stankonia.png"}
+{"_id":{"$oid":"5f3f3c492e8816c77fd8341e"},"Title":"Rid Of Me","Year":"1993","Genre":"Alternative Rock","Artist":"PJ Harvey","ImagePath":"ridofme.png"}
+{"_id":{"$oid":"5f3f3c822e8816c77fd8341f"},"Title":"Stories From The City, Stories From The Sea","Year":"2000","Genre":"Alternative Rock","Artist":"PJ Harvey","ImagePath":"storiesfromthecitystoriesfromthesea.png"}
+{"_id":{"$oid":"5f3f3cbb2e8816c77fd83420"},"Title":"White Chalk","Year":"2007","Genre":"Chamber Pop","Artist":"PJ Harvey","ImagePath":"whitechalk.png"}
+{"_id":{"$oid":"5f3f3d122e8816c77fd83421"},"Title":"A Moon Shaped Pool","Year":"2016","Genre":"Art Rock","Artist":"Radiohead","ImagePath":"amoonshapedpool.png"}
+{"_id":{"$oid":"5f3f3d882e8816c77fd83422"},"Title":"Stadium Arcadium","Year":"2006","Genre":"Rock","Artist":"Red Hot Chili Peppers","ImagePath":"stadiumarcadium.png"}
+{"_id":{"$oid":"5f3f3de92e8816c77fd83423"},"Title":"Honey","Year":"2018","Genre":"Dance Pop","Artist":"Robyn","ImagePath":"honey.png"}
+{"_id":{"$oid":"5f3f3e382e8816c77fd83424"},"Title":"Songs Of Praise","Year":"2018","Genre":"Post-Punk","Artist":"Shame","ImagePath":"songsofpraise.png"}
+{"_id":{"$oid":"5f3f3e7a2e8816c77fd83425"},"Title":"Mellon Collie And The Infinite Sadness","Year":"1995","Genre":"Alternative Rock","Artist":"Smashing Pumpkins","ImagePath":"melloncollieandtheinfinitesadness.png"}
+{"_id":{"$oid":"5f3f3ea52e8816c77fd83426"},"Title":"Spice","Year":"1996","Genre":"Pop","Artist":"Spice Girls","ImagePath":"spice.png"}
+{"_id":{"$oid":"5f3f3edc2e8816c77fd83427"},"Title":"CrazySexyCool","Year":"1994","Genre":"R&B","Artist":"TLC","ImagePath":"crazysexycool.png"}
+{"_id":{"$oid":"5f3f3f192e8816c77fd83428"},"Title":"Return To Cookie Mountain","Year":"2006","Genre":"Indie Rock","Artist":"TV On The Radio","ImagePath":"returntocookiemountain.png"}
+{"_id":{"$oid":"5f3f3f5e2e8816c77fd83429"},"Title":"Isolation","Year":"2018","Genre":"R&B","Artist":"Kali Uchis","ImagePath":"isolation.png"}
+{"_id":{"$oid":"5f3f3fa32e8816c77fd8342a"},"Title":"LEGACY! LEGACY!","Year":"2019","Genre":"Neo Soul","Artist":"Jamila Woods","ImagePath":"legacylegacy.png"}
+{"_id":{"$oid":"5f3f3fe82e8816c77fd8342b"},"Title":"xx","Year":"2009","Genre":"Indie Pop","Artist":"The xx","ImagePath":"xx.png"}
+{"_id":{"$oid":"5f3f40192e8816c77fd8342c"},"Title":"I See You","Year":"2017","Genre":"Indie Pop","Artist":"The xx","ImagePath":"iseeyou.png"}
+{"_id":{"$oid":"5f3f403f2e8816c77fd8342d"},"Title":"Coexist","Year":"2012","Genre":"Indie Pop","Artist":"The xx","ImagePath":"coexist.png"}
+{"_id":{"$oid":"5f3f40c72e8816c77fd8342e"},"Title":"Fetch The Bolt Cutters","Year":"2020","Genre":"Art Pop","Artist":"Fiona Apple","ImagePath":"fetchtheboltcutters.png"}
+{"_id":{"$oid":"5f3f41032e8816c77fd8342f"},"Title":"Saint Cloud","Year":"2020","Genre":"Indie Rock","Artist":"Waxahatchee","ImagePath":"saintcloud.png"}
+{"_id":{"$oid":"5f3f41692e8816c77fd83430"},"Title":"SAWAYAMA","Year":"2020","Genre":"Pop","Artist":"Rina Sawayama","ImagePath":"sawayama.png"}
+{"_id":{"$oid":"5f3f41ad2e8816c77fd83431"},"Title":"Future Nostalgia","Year":"2020","Genre":"Dance Pop","Artist":"Dua Lipa","ImagePath":"futurenostalgia.png"}
+{"_id":{"$oid":"5f3f422c2e8816c77fd83432"},"Title":"What's Your Pleasure?","Year":"2020","Genre":"Post-Disco","Artist":"Jessie Ware","ImagePath":"whatsyourpleasure.png"}

@@ -4,17 +4,24 @@ const express = require("express"),
 const morgan = require("morgan");
 const app = express();
 const mongoose = require("mongoose");
+const cors = require("cors");
+app.use(cors());
 const Models = require("./models.js");
+const { check, validationResult } = require("express-validator");
 const passport = require("passport");
 require("./passport");
 
 const Albums = Models.Album;
 const Users = Models.User;
 
-mongoose.connect("mongodb://localhost:27017/vinyl", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// mongoose.connect("mongodb://localhost:27017/vinyl", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
+mongoose.connect(
+  "mongodb+srv://michaelf25:greece1@cluster0.bvujn.mongodb.net/APIs?retryWrites=true&w=majority",
+  { useNewUrlParser: true, useUnifiedTopology: true }
+);
 
 app.use(bodyParser.json());
 // use morgan logger middleware
@@ -137,32 +144,57 @@ app.get("/users", function (req, res) {
 });
 
 // Add new user
-app.post("/users", function (req, res) {
-  Users.findOne({ Username: req.body.Username })
-    .then(function (user) {
-      if (user) {
-        return res.status(400).send(req.body.Name + " already used!");
-      } else {
-        Users.create({
-          Username: req.body.Username,
-          Password: req.body.Password,
-          Email: req.body.Email,
-          Birthday: req.body.Birthday,
-        })
-          .then(function (user) {
-            res.status(201).json(user);
+app.post(
+  "/users",
+  // Validation logic here for request
+  //you can either use a chain of methods like .not().isEmpty()
+  //which means "opposite of isEmpty" in plain english "is not empty"
+  //or use .isLength({min: 5}) which means
+  //minimum value of 5 characters are only allowed
+  [
+    check("Username", "Username is required").isLength({ min: 5 }),
+    check(
+      "Username",
+      "Username contains non alphanumeric characters - not allowed."
+    ).isAlphanumeric(),
+    check("Password", "Password is required").not().isEmpty(),
+    check("Email", "Email does not appear to be valid").isEmail(),
+  ],
+  (req, res) => {
+    // check the validation object for errors
+    let errors = validationResult(req);
+
+    if (!errors.isEmpty()) {
+      return res.status(422).json({ errors: errors.array() });
+    }
+    var hashedPassword = Users.hashPassword(req.body.Password);
+    Users.findOne({ Username: req.body.Username })
+      .then(function (user) {
+        if (user) {
+          //If the user is found, send a response that it already exists
+          return res.status(400).send(req.body.Username + " already exists");
+        } else {
+          Users.create({
+            Username: req.body.Username,
+            Password: hashedPassword,
+            Email: req.body.Email,
+            Birthday: req.body.Birthday,
           })
-          .catch(function (error) {
-            console.error(error);
-            res.status(500).send("Error: " + error);
-          });
-      }
-    })
-    .catch(function (error) {
-      console.error(error);
-      res.status(500).send("Error: " + error);
-    });
-});
+            .then(function (user) {
+              res.status(201).json(user);
+            })
+            .catch(function (error) {
+              console.error(error);
+              res.status(500).send("Error: " + error);
+            });
+        }
+      })
+      .catch(function (error) {
+        console.error(error);
+        res.status(500).send("Error: " + error);
+      });
+  }
+);
 
 // Update the user info
 app.put(
@@ -304,6 +336,10 @@ app.delete(
   }
 );
 
-app.listen(8080, () => {
-  //Listen for requests
+var port = process.env.PORT || 3000;
+app.listen(port, "0.0.0.0", function () {
+  console.log("Listening on Port 3000");
 });
+
+// mongoimport --uri mongodb+srv://michaelf25:greece1@cluster0.bvujn.mongodb.net/APIs --collection users --type json --file users.json
+// mongo "mongodb+srv://cluster0.bvujn.mongodb.net/APIs" --username michaelf25

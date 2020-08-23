@@ -18,10 +18,10 @@ const Users = Models.User;
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
 // });
-mongoose.connect(
-  "mongodb+srv://michaelf25:greece1@cluster0.bvujn.mongodb.net/APIs?retryWrites=true&w=majority",
-  { useNewUrlParser: true, useUnifiedTopology: true }
-);
+mongoose.connect(process.env.CONNECTION_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 app.use(bodyParser.json());
 // use morgan logger middleware

@@ -162,13 +162,14 @@ app.post(
   ],
   (req, res) => {
     // check the validation object for errors
-    let errors = validationResult(req);
+    var errors = validationResult(req);
 
     if (!errors.isEmpty()) {
       return res.status(422).json({ errors: errors.array() });
     }
+
     var hashedPassword = Users.hashPassword(req.body.Password);
-    Users.findOne({ Username: req.body.Username })
+    Users.findOne({ Username: req.body.Username }) // Search to see if a user with the requested username already exists
       .then(function (user) {
         if (user) {
           //If the user is found, send a response that it already exists

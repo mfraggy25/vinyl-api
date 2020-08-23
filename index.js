@@ -337,9 +337,9 @@ app.delete(
   }
 );
 
-var port = process.env.PORT || 3000;
-app.listen(port, "0.0.0.0", function () {
-  console.log("Listening on Port 3000");
+const port = process.env.PORT || 8080;
+app.listen(port, "0.0.0.0", () => {
+  console.log("Listening on Port " + port);
 });
 
 // mongoimport --uri mongodb+srv://michaelf25:greece1@cluster0.bvujn.mongodb.net/APIs --collection users --type json --file users.json

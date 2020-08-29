@@ -43,10 +43,7 @@ app.get("/", function (req, res) {
   res.send("Album Database");
 });
 // GET list of data about all albums
-app.get("/albums", passport.authenticate("jwt", { session: false }), function (
-  req,
-  res
-) {
+app.get("/albums", function (req, res) {
   Albums.find()
     .then(function (albums) {
       res.status(201).json(albums);

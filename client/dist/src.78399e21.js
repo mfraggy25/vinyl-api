@@ -30272,32 +30272,32 @@ var AlbumView = /*#__PURE__*/function (_React$Component) {
       if (!album) return null;
       return _react.default.createElement("div", {
         className: "album-view"
-      }, _react.default.createElement("div", {
+      }, _react.default.createElement("img", {
+        className: "album-cover",
+        src: album.ImagePath
+      }), _react.default.createElement("div", {
         className: "album-title"
       }, _react.default.createElement("div", {
         className: "label"
-      }, "Title"), _react.default.createElement("div", {
+      }, "Title:"), _react.default.createElement("div", {
         className: "value"
       }, album.Title)), _react.default.createElement("div", {
         className: "album-artist"
       }, _react.default.createElement("div", {
         className: "label"
-      }, "Artist"), _react.default.createElement("div", {
+      }, "Artist:"), _react.default.createElement("div", {
         className: "value"
-      }, album.Artist)), _react.default.createElement("img", {
-        className: "album-poster",
-        src: album.ImagePath
-      }), _react.default.createElement("div", {
+      }, album.Artist)), _react.default.createElement("div", {
         className: "album-genre"
       }, _react.default.createElement("div", {
         className: "label"
-      }, "Genre"), _react.default.createElement("div", {
+      }, "Genre:"), _react.default.createElement("div", {
         className: "value"
       }, album.Genre)), _react.default.createElement("div", {
         className: "album-year"
       }, _react.default.createElement("div", {
         className: "label"
-      }, "Year Released"), _react.default.createElement("div", {
+      }, "Year Released:"), _react.default.createElement("div", {
         className: "value"
       }, album.Year)), _react.default.createElement("button", {
         onClick: function onClick() {
@@ -30519,7 +30519,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51510" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51604" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

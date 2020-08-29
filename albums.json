@@ -8,7 +8,7 @@
 {"_id":{"$oid":"5f3c9c6c2e8816c77fd833b9"},"Title":"Butterfly","Year":"1997","Genre":"R&B","Artist":"Mariah Carey","ImagePath":"butterfly.png"}
 {"_id":{"$oid":"5f3c9cb32e8816c77fd833ba"},"Title":"Chris","Year":"2018","Genre":"Pop","Artist":"Christine & The Queens","ImagePath":"chris.png"}
 {"_id":{"$oid":"5f3c9cf62e8816c77fd833bb"},"Title":"Breakaway","Year":"2004","Genre":"Pop Rock","Artist":"Kelly Clarkson","ImagePath":"breakaway.png"}
-{"_id":{"$oid":"5f3c9d332e8816c77fd833bc"},"Title":"London Calling","Year":"1979","Genre":"Punk Rock","Artist":"The Clash","ImagePath":"londoncalling.png"}
+{"_id":{"$oid":"5f3c9d332e8816c77fd833bc"},"Title":"London Calling","Year":"1979","Genre":"Punk Rock","Artist":"The Clash","ImagePath":"https://upload.wikimedia.org/wikipedia/en/0/00/TheClashLondonCallingalbumcover.jpg"}
 {"_id":{"$oid":"5f3c9d892e8816c77fd833bd"},"Title":"Disintegration","Year":"1989","Genre":"Alternative Rock","Artist":"The Cure","ImagePath":"disintegration.png"}
 {"_id":{"$oid":"5f3c9dfe2e8816c77fd833be"},"Title":"Playing The Angel","Year":"2005","Genre":"Synth-Pop","Artist":"Depeche Mode","ImagePath":"playingtheangel.png"}
 {"_id":{"$oid":"5f3c9e452e8816c77fd833bf"},"Title":"The Chronic","Year":"1992","Genre":"Rap","Artist":"Dr. Dre","ImagePath":"thechronic.png"}
@@ -20,7 +20,7 @@
 {"_id":{"$oid":"5f3ca0992e8816c77fd833c5"},"Title":"Ginuwine...The Bachelor","Year":"1996","Genre":"R&B","Artist":"Ginuwine","ImagePath":"ginuwinethebachelor.png"}
 {"_id":{"$oid":"5f3ca0df2e8816c77fd833c6"},"Title":"Let England Shake","Year":"2011","Genre":"Folk Rock","Artist":"PJ Harvey","ImagePath":"letenglandshake.png"}
 {"_id":{"$oid":"5f3ca1282e8816c77fd833c7"},"Title":"Live Through This","Year":"1994","Genre":"Grunge","Artist":"Hole","ImagePath":"livethroughthis.png"}
-{"_id":{"$oid":"5f3ca1602e8816c77fd833c8"},"Title":"New Day Rising","Year":"1985","Genre":"Alternative Rock","Artist":"Husker Du","ImagePath":"newdayrising.png"}
+{"_id":{"$oid":"5f3ca1602e8816c77fd833c8"},"Title":"New Day Rising","Year":"1985","Genre":"Alternative Rock","Artist":"Husker Du","ImagePath":"https://upload.wikimedia.org/wikipedia/en/7/71/HuskerDuNewDayRising.jpg"}
 {"_id":{"$oid":"5f3ca1932e8816c77fd833c9"},"Title":"Control","Year":"1986","Genre":"R&B","Artist":"Janet Jackson","ImagePath":"control.png"}
 {"_id":{"$oid":"5f3ca1be2e8816c77fd833ca"},"Title":"The Velvet Rope","Year":"1997","Genre":"R&B","Artist":"Janet Jackson","ImagePath":"thevelvetrope.png"}
 {"_id":{"$oid":"5f3ca1ee2e8816c77fd833cb"},"Title":"Thriller","Year":"1982","Genre":"Pop","Artist":"Michael Jackson","ImagePath":"thriller.png"}
@@ -69,7 +69,7 @@
 {"_id":{"$oid":"5f3dd1e12e8816c77fd833f7"},"Title":"In Rainbows","Year":"2007","Genre":"Alternative Rock","Artist":"Radiohead","ImagePath":"inrainbows.png"}
 {"_id":{"$oid":"5f3dd22c2e8816c77fd833f8"},"Title":"Californication","Year":"1999","Genre":"Rock","Artist":"Red Hot Chili Peppers","ImagePath":"californication.png"}
 {"_id":{"$oid":"5f3dd2602e8816c77fd833f9"},"Title":"By The Way","Year":"2002","Genre":"Rock","Artist":"Red Hot Chili Peppers","ImagePath":"bytheway.png"}
-{"_id":{"$oid":"5f3dd2e02e8816c77fd833fa"},"Title":"Never Mind The Bollocks","Year":"1977","Genre":"Punk Rock","Artist":"Sex Pistols","ImagePath":"nevermindthebollocks.png"}
+{"_id":{"$oid":"5f3dd2e02e8816c77fd833fa"},"Title":"Never Mind The Bollocks","Year":"1977","Genre":"Punk Rock","Artist":"Sex Pistols","ImagePath":"https://upload.wikimedia.org/wikipedia/en/4/4c/Never_Mind_the_Bollocks%2C_Here%27s_the_Sex_Pistols.png"}
 {"_id":{"$oid":"5f3dd3172e8816c77fd833fb"},"Title":"Swoon","Year":"2009","Genre":"Alternative Rock","Artist":"Silversun Pickups","ImagePath":"swoon.png"}
 {"_id":{"$oid":"5f3dd37b2e8816c77fd833fc"},"Title":"Dig Me Out","Year":"1997","Genre":"Punk Rock","Artist":"Sleater-Kinney","ImagePath":"digmeout.png"}
 {"_id":{"$oid":"5f3dd3b12e8816c77fd833fd"},"Title":"All Hands On The Bad One","Year":"2000","Genre":"Punk Rock","Artist":"Sleater-Kinney","ImagePath":"allhandsonthebadone.png"}

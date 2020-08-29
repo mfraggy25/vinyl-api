@@ -14,21 +14,21 @@ export class AlbumView extends React.Component {
 
     return (
       <div className="album-view">
+        <img className="album-cover" src={album.ImagePath} />
         <div className="album-title">
-          <div className="label">Title</div>
+          <div className="label">Title:</div>
           <div className="value">{album.Title}</div>
         </div>
         <div className="album-artist">
-          <div className="label">Artist</div>
+          <div className="label">Artist:</div>
           <div className="value">{album.Artist}</div>
         </div>
-        <img className="album-poster" src={album.ImagePath} />
         <div className="album-genre">
-          <div className="label">Genre</div>
+          <div className="label">Genre:</div>
           <div className="value">{album.Genre}</div>
         </div>
         <div className="album-year">
-          <div className="label">Year Released</div>
+          <div className="label">Year Released:</div>
           <div className="value">{album.Year}</div>
         </div>
         <button onClick={() => onClick()}>Back</button>

@@ -22,7 +22,7 @@ export class AlbumView extends React.Component {
           <div className="label">Artist</div>
           <div className="value">{album.Artist}</div>
         </div>
-        <img className="album-poster" src={album.ImageUrl} />
+        <img className="album-poster" src={album.ImagePath} />
         <div className="album-genre">
           <div className="label">Genre</div>
           <div className="value">{album.Genre}</div>

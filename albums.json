@@ -1,9 +1,9 @@
-{"_id":{"$oid":"5f3c992a2e8816c77fd833b2"},"Title":"All Eyez On Me","Year":"1996","Genre":"Rap","Artist":"2Pac","ImagePath":"alleyezonme.png"}
-{"_id":{"$oid":"5f3c99b42e8816c77fd833b3"},"Title":"The Sign","Year":"1993","Genre":"Pop","Artist":"Ace Of Base","ImagePath":"thesign.png"}
-{"_id":{"$oid":"5f3c9a7b2e8816c77fd833b4"},"Title":"Dirt","Year":"1992","Genre":"Grunge","Artist":"Alice In Chains","ImagePath":"dirt.png"}
-{"_id":{"$oid":"5f3c9ad62e8816c77fd833b5"},"Title":"Goddess","Year":"2014","Genre":"Alternative R&B","Artist":"Banks","ImagePath":"goddess.png"}
-{"_id":{"$oid":"5f3c9b8b2e8816c77fd833b6"},"Title":"El Camino","Year":"2011","Genre":"Blues Rock","Artist":"The Black Keys","ImagePath":"elcamino.png"}
-{"_id":{"$oid":"5f3c9bc62e8816c77fd833b7"},"Title":"II","Year":"1994","Genre":"R&B","Artist":"Boyz II Men","ImagePath":"ii.png"}
+{"_id":{"$oid":"5f3c992a2e8816c77fd833b2"},"Title":"All Eyez On Me","Year":"1996","Genre":"Rap","Artist":"2Pac","ImagePath":"https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Alleyezonme.jpg/220px-Alleyezonme.jpg"}
+{"_id":{"$oid":"5f3c99b42e8816c77fd833b3"},"Title":"The Sign","Year":"1993","Genre":"Pop","Artist":"Ace Of Base","ImagePath":"https://upload.wikimedia.org/wikipedia/en/d/d9/AceofBaseTheSignAlbumcover.jpg"}
+{"_id":{"$oid":"5f3c9a7b2e8816c77fd833b4"},"Title":"Dirt","Year":"1992","Genre":"Grunge","Artist":"Alice In Chains","ImagePath":"https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Dirt_%28Alice_in_Chains_album_-_cover_art%29.jpg/220px-Dirt_%28Alice_in_Chains_album_-_cover_art%29.jpg"}
+{"_id":{"$oid":"5f3c9ad62e8816c77fd833b5"},"Title":"Goddess","Year":"2014","Genre":"Alternative R&B","Artist":"Banks","ImagePath":"https://images-na.ssl-images-amazon.com/images/I/91fnVeA%2BVnL._AC_SL1500_.jpg"}
+{"_id":{"$oid":"5f3c9b8b2e8816c77fd833b6"},"Title":"El Camino","Year":"2011","Genre":"Blues Rock","Artist":"The Black Keys","ImagePath":"https://upload.wikimedia.org/wikipedia/en/thumb/9/92/The_Black_Keys_El_Camino_Album_Cover.jpg/220px-The_Black_Keys_El_Camino_Album_Cover.jpg"}
+{"_id":{"$oid":"5f3c9bc62e8816c77fd833b7"},"Title":"II","Year":"1994","Genre":"R&B","Artist":"Boyz II Men","ImagePath":"https://upload.wikimedia.org/wikipedia/en/b/b9/BoyzIIMen-II-Cover.jpg"}
 {"_id":{"$oid":"5f3c9c2b2e8816c77fd833b8"},"Title":"Hounds Of Love","Year":"1985","Genre":"Art Pop","Artist":"Kate Bush","ImagePath":"houndsoflove.png"}
 {"_id":{"$oid":"5f3c9c6c2e8816c77fd833b9"},"Title":"Butterfly","Year":"1997","Genre":"R&B","Artist":"Mariah Carey","ImagePath":"butterfly.png"}
 {"_id":{"$oid":"5f3c9cb32e8816c77fd833ba"},"Title":"Chris","Year":"2018","Genre":"Pop","Artist":"Christine & The Queens","ImagePath":"chris.png"}

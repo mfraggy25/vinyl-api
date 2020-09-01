@@ -1,4 +1,6 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
+import "./album-view.scss";
 
 export class AlbumView extends React.Component {
   constructor() {
@@ -13,25 +15,23 @@ export class AlbumView extends React.Component {
     if (!album) return null;
 
     return (
-      <div className="album-view">
-        <img className="album-cover" src={album.ImagePath} />
-        <div className="album-title">
-          <div className="label">Title:</div>
-          <div className="value">{album.Title}</div>
-        </div>
-        <div className="album-artist">
-          <div className="label">Artist:</div>
-          <div className="value">{album.Artist}</div>
-        </div>
-        <div className="album-genre">
-          <div className="label">Genre:</div>
-          <div className="value">{album.Genre}</div>
-        </div>
-        <div className="album-year">
-          <div className="label">Year Released:</div>
-          <div className="value">{album.Year}</div>
-        </div>
-        <button onClick={() => onClick()}>Back</button>
+      <div>
+        <Card style={{ width: "50%" }}>
+          <Card.Img variant="top" src={album.ImagePath} />
+          <Card.Body>
+            <Card.Title>{album.Title}</Card.Title>
+            <Card.Title>{album.Artist}</Card.Title>
+            <Card.Text>{album.Genre}</Card.Text>
+            <Card.Text>{album.Year}</Card.Text>
+            <Button
+              variant="primary"
+              onClick={() => onClick()}
+              className="homeButton"
+            >
+              Back
+            </Button>
+          </Card.Body>
+        </Card>
       </div>
     );
   }

@@ -1,4 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import "./album-card.scss";
 
 export class AlbumCard extends React.Component {
   render() {
@@ -8,9 +12,22 @@ export class AlbumCard extends React.Component {
     const { album, onClick } = this.props;
 
     return (
-      <div className="album-card" onClick={() => onClick(album)}>
-        {album.Title}
-      </div>
+      <Card style={{ width: "16rem" }}>
+        <Card.Img variant="top" src={album.ImagePath} />
+        <Card.Body>
+          <Card.Title>{album.Title}</Card.Title>
+          <Card.Text>{album.Artist}</Card.Text>
+          <Card.Text>{album.Genre}</Card.Text>
+          <Card.Text>{album.Year}</Card.Text>
+          <Button
+            variant="primary"
+            onClick={() => onClick(album)}
+            className="album-card"
+          >
+            Open
+          </Button>
+        </Card.Body>
+      </Card>
     );
   }
 }

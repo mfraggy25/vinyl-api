@@ -54,7 +54,7 @@ export class MainView extends React.Component {
 
   onButtonClick() {
     this.setState({
-      selectedMovie: null,
+      selectedAlbum: null,
     });
   }
 

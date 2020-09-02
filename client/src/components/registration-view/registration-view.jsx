@@ -18,7 +18,6 @@ export function RegistrationView(props) {
     e.preventDefault();
     console.log(username, password, birthday, email);
     // Send a request to the server for authentication then call props.onLoggedIn(username)
-    props.onLoggedIn(username);
   };
 
   return (
@@ -30,7 +29,7 @@ export function RegistrationView(props) {
             type="email"
             placeholder="Enter email"
             value={email}
-            onChange={(e) => createEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
@@ -43,7 +42,7 @@ export function RegistrationView(props) {
             type="text"
             placeholder="Enter username"
             value={username}
-            onChange={(e) => createUsername(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
           />
           <Form.Control.Feedback type="invalid">
             Please choose a username.
@@ -56,7 +55,7 @@ export function RegistrationView(props) {
             type="password"
             placeholder="Password"
             value={password}
-            onChange={(e) => createPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
 
@@ -67,7 +66,7 @@ export function RegistrationView(props) {
             placeholder="01/01/1990"
             value={birthday}
             value={birthday}
-            onChange={(e) => createDob(e.target.value)}
+            onChange={(e) => setBirthday(e.target.value)}
           />
         </Form.Group>
 
@@ -84,8 +83,3 @@ export function RegistrationView(props) {
     </Container>
   );
 }
-
-RegistrationView.propTypes = {
-  onSignedIn: PropTypes.func.isRequired,
-  onClick: PropTypes.func.isRequired,
-};

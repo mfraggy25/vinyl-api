@@ -17,8 +17,6 @@ export class AlbumCard extends React.Component {
         <Card.Body>
           <Card.Title>{album.Title}</Card.Title>
           <Card.Text>{album.Artist}</Card.Text>
-          <Card.Text>{album.Genre}</Card.Text>
-          <Card.Text>{album.Year}</Card.Text>
           <Button
             variant="primary"
             onClick={() => onClick(album)}

@@ -254,7 +254,7 @@ app.delete(
   function (req, res) {
     Users.findOneAndUpdate(
       { Username: req.params.Username },
-      { $pull: { OwnList: req.params.albumID } },
+      { $pull: { Favorites: req.params.AlbumID } },
       { new: true }, // This line makes sure that the updated document is returned
       (error, updatedUser) => {
         if (error) {

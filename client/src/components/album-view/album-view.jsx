@@ -1,19 +1,18 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 import "./album-view.scss";
 
 export class AlbumView extends React.Component {
   constructor() {
     super();
-
     this.state = {};
   }
 
   render() {
     const { album, onClick } = this.props;
-
     if (!album) return null;
 
     return (

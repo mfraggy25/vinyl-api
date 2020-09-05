@@ -1,5 +1,9 @@
 import React from "react";
 import axios from "axios";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,6 +13,8 @@ import { AlbumCard } from "../album-card/album-card";
 import { AlbumView } from "../album-view/album-view";
 import { LoginView } from "../login-view/login-view";
 import { RegistrationView } from "../registration-view/registration-view";
+import { ProfileView } from "../profile-view/profile-view";
+import { ProfileUpdate } from "../profile-view/profile-update";
 
 export class MainView extends React.Component {
   // One of the "hooks" available in a React Component
@@ -18,110 +24,171 @@ export class MainView extends React.Component {
     super(props);
 
     this.state = {
-      albums: null,
-      selectedAlbum: null,
+      albums: [],
       user: null,
-      register: false,
+      email: "",
+      birthday: "",
+      userInfo: {},
     };
   }
 
-  componentDidMount() {
-    let url_root = "https://the-vinyl-life.herokuapp.com";
+  getAlbums(token) {
     axios
-      .get(`${url_root}/albums`)
+      .get("http://the-vinyl-life.herokuapp.com/albums", {
+        headers: { Authorization: `Bearer ${token}` },
+      })
       .then((response) => {
         // Assign the result to the state
         this.setState({
           albums: response.data,
         });
+        localStorage.setItem("albums", JSON.stringify(response.data));
       })
       .catch(function (error) {
         console.log(error);
       });
   }
 
+  getUser(token) {
+    axios
+      .get("http://the-vinyl-life.herokuapp.com/users", {
+        headers: { Authorization: `Bearer ${token}` },
+      })
+      .then((response) => {
+        console.log(response);
+        this.setState({
+          email: response.data.Email,
+          birthday: response.data.Birthday,
+          token: token,
+          userInfo: response.data,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
+  componentDidMount() {
+    let accessToken = localStorage.getItem("token");
+    if (accessToken !== null) {
+      this.setState({
+        user: localStorage.getItem("user"),
+      });
+      this.getAlbums(accessToken);
+      this.getUser(localStorage.getItem("user"), accessToken);
+    }
+  }
+
   onAlbumClick(album) {
+    window.location.hash = "#" + album._id;
     this.setState({
-      selectedAlbum: album,
+      selectedAlbumId: album._id,
     });
   }
 
-  onLoggedIn(user) {
+  onLoggedIn(authData) {
     this.setState({
-      user,
+      user: authData.user.Username,
+    });
+    // Auth information (= user + token) received from handleLogin method has been saved in localStorage.
+    // setItem method accepts two arguments (key and value)
+    localStorage.setItem("token", authData.token);
+    localStorage.setItem("user", authData.user.Username);
+    // Will get the albums from the API once user is logged in
+    this.getAlbums(authData.token);
+    this.setState({
+      userInfo: authData.user,
     });
   }
 
-  onButtonClick() {
+  handleLogout() {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
     this.setState({
-      selectedAlbum: null,
+      user: null,
     });
+    window.open("/", "_self");
   }
 
-  onSignedIn(user) {
+  handleProfileUpdate(data) {
     this.setState({
-      user: user,
-      register: false,
+      userInfo: data,
     });
-  }
-
-  register() {
-    this.setState({
-      register: true,
-    });
-  }
-
-  alreadyMember() {
-    this.setState({
-      register: false,
-    });
+    localStorage.setItem("user", data.username);
   }
 
   render() {
-    const { albums, selectedAlbum, user, register } = this.state;
+    const { albums, user, userInfo, token } = this.state;
 
-    if (!user && register === false)
-      return (
-        <LoginView
-          onClick={() => this.register()}
-          onLoggedIn={(user) => this.onLoggedIn(user)}
-        />
-      );
-
-    if (register)
-      return (
-        <RegistrationView
-          onClick={() => this.alreadyMember()}
-          onSignedIn={(user) => this.onSignedIn(user)}
-        />
-      );
-
-    // if albums is not yet loaded
     if (!albums) return <div className="main-view" />;
-
-    return (
-      <div className="main-view">
-        <Container>
-          <Row>
-            {selectedAlbum ? (
-              <AlbumView
-                album={selectedAlbum}
-                onClick={() => this.onAlbumClick(null)}
-              />
-            ) : (
-              albums.map((album) => (
-                <Col key={album._id} m={4}>
-                  <AlbumCard
-                    key={album._id}
-                    album={album}
-                    onClick={(album) => this.onAlbumClick(album)}
-                  />
-                </Col>
-              ))
-            )}
-          </Row>
-        </Container>
-      </div>
-    );
+    if (!user) {
+      return (
+        <Router>
+          <div className="main-view">
+            <Route
+              exact
+              path="/"
+              render={() => (
+                <LoginView onLoggedIn={(user) => this.onLoggedIn(user)} />
+              )}
+            />
+            <Route path="/register" render={() => <RegistrationView />} />
+          </div>
+        </Router>
+      );
+    } else {
+      return (
+        <Router>
+          <div className="main-view">
+            <Link component={RouterLink} to={`/users/${user}`}>
+              <Button variant="outline-dark">Profile</Button>
+            </Link>
+            <Button variant="primary" onClick={() => this.handleLogout()}>
+              Log out
+            </Button>
+            <Route
+              exact
+              path="/"
+              render={() =>
+                albums.map((m) => <AlbumCard key={m._id} album={m} />)
+              }
+            />
+            <Route
+              path="/albums/:albumId"
+              render={({ match }) => (
+                <AlbumView
+                  album={albums.find((m) => m._id === match.params.albumId)}
+                />
+              )}
+            />
+            <Route
+              path="/:Artist"
+              render={({ match }) => (
+                <AlbumView
+                  album={albums.find((m) => m._id === match.params.Artist)}
+                />
+              )}
+            />
+            <Route
+              path="/users/:Username"
+              render={({ match }) => {
+                return <ProfileView userInfo={userInfo} />;
+              }}
+            />
+            <Route
+              path="/update/:Username"
+              render={() => (
+                <ProfileUpdate
+                  userInfo={userInfo}
+                  user={user}
+                  token={token}
+                  updateUser={(data) => this.handleProfileUpdate(data)}
+                />
+              )}
+            />
+          </div>
+        </Router>
+      );
+    }
   }
 }

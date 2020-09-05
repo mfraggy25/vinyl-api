@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 // imports for files to bundle
 import "./registration-view.scss";
@@ -16,8 +17,24 @@ export function RegistrationView(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(username, password, birthday, email);
-    // Send a request to the server for authentication then call props.onLoggedIn(username)
+    console.log("testjrnoirinbjrngbirnbirn");
+    axios
+      .post("http://the-vinyl-life.herokuapp.com/users", {
+        Username: username,
+        Password: password,
+        Email: email,
+        Birthday: birthday,
+      })
+      .then((response) => {
+        const data = response.data;
+        console.log("onw", data);
+        alert("Registration was successful. Please log in");
+        window.open("/", "_self"); // the second argument '_self' is necessary so that the page will open in the current tab
+      })
+      .catch((e) => {
+        console.log("error registering the user");
+        alert("Unable to register, please try again.");
+      });
   };
 
   return (
@@ -76,9 +93,11 @@ export function RegistrationView(props) {
         <Button variant="primary" type="submit" onClick={handleSubmit}>
           Submit
         </Button>
-        <Button variant="secondary" onClick={() => props.onClick()}>
-          Already registered?
-        </Button>
+        <Link to={"/"}>
+          <Button variant="secondary" type="link">
+            Already registered?
+          </Button>
+        </Link>
       </Form>
     </Container>
   );

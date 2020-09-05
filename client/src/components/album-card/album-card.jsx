@@ -3,13 +3,14 @@ import PropTypes from "prop-types";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./album-card.scss";
+import { Link } from "react-router-dom";
 
 export class AlbumCard extends React.Component {
   render() {
     // This is given to the <AlbumCard/> component by the outer world
     // which, in this case, is `MainView`, as `MainView` is what’s
     // connected to your database via the albums endpoint of your API
-    const { album, onClick } = this.props;
+    const { album } = this.props;
 
     return (
       <Card style={{ width: "16rem" }}>
@@ -17,13 +18,9 @@ export class AlbumCard extends React.Component {
         <Card.Body>
           <Card.Title>{album.Title}</Card.Title>
           <Card.Text>{album.Artist}</Card.Text>
-          <Button
-            variant="primary"
-            onClick={() => onClick(album)}
-            className="album-card"
-          >
-            Open
-          </Button>
+          <Link to={`/albums/${album._id}`}>
+            <Button variant="link">Open</Button>
+          </Link>
         </Card.Body>
       </Card>
     );

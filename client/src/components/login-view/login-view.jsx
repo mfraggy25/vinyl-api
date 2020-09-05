@@ -3,6 +3,8 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import PropTypes from "prop-types";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 import "./login-view.scss";
 
@@ -10,11 +12,24 @@ export function LoginView(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-    console.log(username, password);
-    // Send a request to the server for authentication then call props.onLoggedIn(username)
-    props.onLoggedIn(username);
+    console.log("multiple");
+    axios
+      .post("http://the-vinyl-life.herokuapp.com/login", {
+        Username: username,
+        Password: password,
+      })
+      // Send a request to the server for authentication then call props.onLoggedIn(username)
+      .then((response) => {
+        const data = response.data;
+        console.log("Logged in", data);
+        props.onLoggedIn(data);
+      })
+      .catch((e) => {
+        console.log("no such user");
+        return alert("Invalid username or password. Please try again");
+      });
   };
 
   return (
@@ -46,20 +61,16 @@ export function LoginView(props) {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Form.Group controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Button variant="primary" id="loginButton" onClick={handleSubmit}>
+        <Button variant="primary" id="loginButton" onClick={handleLogin}>
           Submit
         </Button>
         <Form.Group controlId="newUser">
-          <Button
-            variant="secondary"
-            id="registerButton"
-            onClick={() => props.onClick()}
-          >
-            Not registered? Sign up!
-          </Button>
+          <Form.Text>Don´t have an account?</Form.Text>
+          <Link to={"/register"}>
+            <Button variant="secondary" type="link">
+              Register
+            </Button>
+          </Link>
         </Form.Group>
       </Form>
     </Container>
@@ -68,5 +79,4 @@ export function LoginView(props) {
 
 LoginView.propTypes = {
   onLoggedIn: PropTypes.func.isRequired,
-  onClick: PropTypes.func.isRequired,
 };

@@ -1,3 +1,9 @@
 $primary-color: rgb(43, 196, 94);
 $secondary-color: rgb(58, 17, 85);
 $font-family: "Playfair Display", serif;
+
+.album-card {
+  justify-content: center;
+  margin: auto;
+  grid-template-columns: 4;
+}

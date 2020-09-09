@@ -1,14 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
 
 // Import statement to indicate that you need to bundle `./index.scss`
 import "./index.scss";
 import { MainView } from "./components/main-view/main-view";
+import vinylApp from "./reducers/reducers";
+
+const store = createStore(vinylApp);
 
 // Main component (will eventually use all the others)
 class VinylLife extends React.Component {
   render() {
-    return <MainView />;
+    return (
+      <Provider store={store}>
+        <MainView />
+      </Provider>
+    );
   }
 }
 

@@ -1,6 +1,30 @@
 .vinyl-life {
   color: steelblue;
 }
+* {
+  box-sizing: border-box;
+}
+
+.main-view {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+.album-card {
+  justify-content: center;
+  margin: auto;
+  grid-template-columns: 4;
+}
+.album-view {
+  justify-content: center;
+  margin: auto;
+  font-family: "Playfair Display", serif;
+}
 .loginContainer {
   background-color: #2bc45e;
   color: #3a1155;

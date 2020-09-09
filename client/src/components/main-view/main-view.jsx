@@ -1,14 +1,19 @@
 import React from "react";
 import axios from "axios";
+import { connect } from "react-redux";
+import { setAlbums, setLoggedUser } from "../../actions/actions";
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { RouterLink } from "react-router-dom";
 import { Link } from "react-router-dom";
+
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./main-view.scss";
 
+import AlbumsList from "../albums-list/albums-list";
 import { AlbumCard } from "../album-card/album-card";
 import { AlbumView } from "../album-view/album-view";
 import { LoginView } from "../login-view/login-view";
@@ -43,6 +48,7 @@ export class MainView extends React.Component {
           albums: response.data,
         });
         localStorage.setItem("albums", JSON.stringify(response.data));
+        this.props.setAlbums(response.data);
       })
       .catch(function (error) {
         console.log(error);
@@ -107,7 +113,7 @@ export class MainView extends React.Component {
     this.setState({
       user: null,
     });
-    window.open("/", "_self");
+    window.open("/client", "_self");
   }
 
   handleProfileUpdate(data) {
@@ -123,7 +129,7 @@ export class MainView extends React.Component {
     if (!albums) return <div className="main-view" />;
     if (!user) {
       return (
-        <Router>
+        <Router basename="/client">
           <div className="main-view">
             <Route
               exact
@@ -149,9 +155,7 @@ export class MainView extends React.Component {
             <Route
               exact
               path="/"
-              render={() =>
-                albums.map((m) => <AlbumCard key={m._id} album={m} />)
-              }
+              render={() => <AlbumsList albums={albums} />}
             />
             <Route
               path="/albums/:albumId"
@@ -192,3 +196,12 @@ export class MainView extends React.Component {
     }
   }
 }
+
+let mapStateToProps = (state) => {
+  return { albums: state.albums, loggedInUser: state.loggedInUser };
+};
+const mapDispatchToProps = {
+  setAlbums,
+  setLoggedUser,
+};
+export default connect(mapStateToProps, mapDispatchToProps)(MainView);

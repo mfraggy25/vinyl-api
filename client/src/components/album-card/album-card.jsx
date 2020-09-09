@@ -26,3 +26,11 @@ export class AlbumCard extends React.Component {
     );
   }
 }
+
+AlbumCard.propTypes = {
+  album: PropTypes.shape({
+    Title: PropTypes.string.isRequired,
+    Artist: PropTypes.string.isRequired,
+    ImagePath: PropTypes.string.isRequired,
+  }).isRequired,
+};

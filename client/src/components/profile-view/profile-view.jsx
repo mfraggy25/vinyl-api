@@ -104,7 +104,13 @@ export class ProfileView extends React.Component {
     this.setState({ [event.target.name]: event.target.value });
   }
   render() {
-    const { username, email, birthday, OwnList, WantList = [] } = this.state;
+    const {
+      username,
+      email,
+      birthday,
+      OwnList = [],
+      WantList = [],
+    } = this.state;
 
     return (
       <Card className="profile-view" style={{ width: "24rem" }}>
@@ -135,11 +141,16 @@ export class ProfileView extends React.Component {
                           }
                         </p>
                         <Link to={`/albums/${OwnList}`}>
-                          <Button size="sm" variant="info">
+                          <Button
+                            className="open-album-button"
+                            size="sm"
+                            variant="info"
+                          >
                             Open
                           </Button>
                         </Link>
                         <Button
+                          className="delete-album-button"
                           size="sm"
                           variant="secondary"
                           onClick={(event) =>
@@ -172,11 +183,16 @@ export class ProfileView extends React.Component {
                           }
                         </p>
                         <Link to={`/albums/${WantList}`}>
-                          <Button size="sm" variant="info">
+                          <Button
+                            className="open-album-button"
+                            size="sm"
+                            variant="info"
+                          >
                             Open
                           </Button>
                         </Link>
                         <Button
+                          className="delete-album-button"
                           size="sm"
                           variant="secondary"
                           onClick={(event) =>

@@ -11,7 +11,7 @@ function VisibilityFilterInput(props) {
     <Form.Control
       onChange={(e) => props.setFilter(e.target.value)}
       value={props.visibilityFilter}
-      placeholder="filter by album name"
+      placeholder="Search by artist or album title"
     />
   );
 }

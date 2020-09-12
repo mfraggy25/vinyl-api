@@ -268,49 +268,49 @@ app.delete(
   }
 );
 
-// Add album to wishlist
-app.post(
-  "/users/:Username/albums/:albumID",
-  passport.authenticate("jwt", { session: false }),
-  function (req, res) {
-    Users.findOneAndUpdate(
-      {
-        Username: req.params.Username,
-      },
-      { $push: { WantList: req.params.albumID } },
-      { new: true }, // This makes sure the updated document is returned
-      function (err, updatedUser) {
-        if (err) {
-          console.error(err);
-          res.status(500).send("Error: " + err);
-        } else {
-          res.json(updatedUser);
-        }
-      }
-    );
-  }
-);
+// // Add album to wishlist
+// app.post(
+//   "/users/:Username/albums/:albumID",
+//   passport.authenticate("jwt", { session: false }),
+//   function (req, res) {
+//     Users.findOneAndUpdate(
+//       {
+//         Username: req.params.Username,
+//       },
+//       { $push: { WantList: req.params.albumID } },
+//       { new: true }, // This makes sure the updated document is returned
+//       function (err, updatedUser) {
+//         if (err) {
+//           console.error(err);
+//           res.status(500).send("Error: " + err);
+//         } else {
+//           res.json(updatedUser);
+//         }
+//       }
+//     );
+//   }
+// );
 
-// Delete album from wishlist
-app.delete(
-  "/users/:Username/albums/:albumID",
-  passport.authenticate("jwt", { session: false }),
-  function (req, res) {
-    Users.findOneAndUpdate(
-      { Username: req.params.Username },
-      { $pull: { WantList: req.params.albumID } },
-      { new: true }, // This line makes sure that the updated document is returned
-      (error, updatedUser) => {
-        if (error) {
-          console.error(error);
-          res.status(500).send("Error: " + err);
-        } else {
-          res.json(updatedUser);
-        }
-      }
-    );
-  }
-);
+// // Delete album from wishlist
+// app.delete(
+//   "/users/:Username/albums/:albumID",
+//   passport.authenticate("jwt", { session: false }),
+//   function (req, res) {
+//     Users.findOneAndUpdate(
+//       { Username: req.params.Username },
+//       { $pull: { WantList: req.params.albumID } },
+//       { new: true }, // This line makes sure that the updated document is returned
+//       (error, updatedUser) => {
+//         if (error) {
+//           console.error(error);
+//           res.status(500).send("Error: " + err);
+//         } else {
+//           res.json(updatedUser);
+//         }
+//       }
+//     );
+//   }
+// );
 
 // Deregister a user from our list by Username
 app.delete(

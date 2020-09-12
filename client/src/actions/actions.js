@@ -2,6 +2,7 @@ export const SET_ALBUMS = "SET_ALBUMS";
 export const SET_ARTIST = "SET_ARTIST";
 export const SET_FILTER = "SET_FILTER";
 export const SET_LOGGED_USER = "SET_LOGGED_USER";
+export const SET_SORT_FILTER = "SET_SORT_FILTER";
 
 export function setAlbums(value) {
   return { type: SET_ALBUMS, value };
@@ -17,4 +18,11 @@ export function setFilter(value) {
 
 export function setLoggedUser(value) {
   return { type: SET_LOGGED_USER, value };
+}
+
+export function setSortFilter(value) {
+  return {
+    type: SET_SORT_FILTER,
+    value,
+  };
 }

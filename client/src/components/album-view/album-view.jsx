@@ -37,30 +37,30 @@ export function AlbumView(props) {
       });
   }
 
-  function addWantedVinyl(event) {
-    event.preventDefault();
-    console.log("film");
-    axios
-      .post(
-        `http://the-vinyl-life.herokuapp.com/users/${localStorage.getItem(
-          "user"
-        )}/albums/${album._id}`,
-        {
-          Username: localStorage.getItem("user"),
-        },
-        {
-          headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
-        }
-      )
-      .then((response) => {
-        console.log("Album added", response);
-        alert("Album added to your Wishlist!");
-      })
-      .catch((event) => {
-        console.log("error adding album to list");
-        alert("Error adding album!");
-      });
-  }
+  // function a ddWantedVinyl(event) {
+  //   event.preventDefault();
+  //   console.log("film");
+  //   axios
+  //     .post(
+  //       `http://the-vinyl-life.herokuapp.com/users/${localStorage.getItem(
+  //         "user"
+  //       )}/albums/${album._id}`,
+  //       {
+  //         Username: localStorage.getItem("user"),
+  //       },
+  //       {
+  //         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+  //       }
+  //     )
+  //     .then((response) => {
+  //       console.log("Album added", response);
+  //       alert("Album added to your Wishlist!");
+  //     })
+  //     .catch((event) => {
+  //       console.log("error adding album to list");
+  //       alert("Error adding album!");
+  //     });
+  // }
 
   return (
     <div>
@@ -75,10 +75,10 @@ export function AlbumView(props) {
             {" "}
             I already own this vinyl{" "}
           </Button>
-          <Button variant="warning" onClick={(event) => addWantedVinyl(event)}>
+          {/* <Button variant="warning" onClick={(event) => addWantedVinyl(event)}>
             {" "}
             I want this vinyl{" "}
-          </Button>
+          </Button> */}
           <Link to={`/`}>
             <Button variant="outline-info">Go Back</Button>
           </Link>
